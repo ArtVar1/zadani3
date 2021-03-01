@@ -3,21 +3,21 @@ import java.util.Scanner;
 import java.util.Arrays;
 public class Main {
 
-    public static int[] get_tab()
-    {
+     public static void main(String[] args) 
+     {
         Scanner scan = new Scanner(System.in);
         int L = 1;
         System.out.println ( "Jak duża ma byc twoja tablica?" );
-        int Jak_duża_ma_byc_tablica;
-        Jak_duża_ma_byc_tablica = scan.nextInt();
+        int tablica;
+        tablica = scan.nextInt();
         System.out.println( "Wpisz swoja wartość" );
         int liczba;
         liczba = scan.nextInt();
-        int[] tab = new int[ Jak_duża_ma_byc_tablica ];
+        int[] tab = new int[ tablica ];
         tab[0] = liczba;
-        while ( L < Jak_duża_ma_byc_tablica )
+        while ( L < tablica )
         {
-            for ( int K = 1;K < Jak_duża_ma_byc_tablica*Jak_duża_ma_byc_tablica; K++ )
+            for ( int K = 1;K < tablica*tablica; K++ )
             {
                 if (( K > liczba ) && (K > tab [ L-1 ]) && (K % 2 == 0 ))
 
